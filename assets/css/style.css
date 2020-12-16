@@ -9,13 +9,19 @@ body {
   font-family: ProximaNova-Regular !important;
 }
 .container {
-  max-width: 1600px;
+  max-width: 1150px;
 }
 .text-para-md {
-  font-size: 22px;
+  font-size: 16px;
+  line-height:30px;
+  width:80%;
 }
 .text-para-lg {
-  font-size: 24px;
+  font-size: 16px;
+  line-height:30px;
+}
+.text-para-sm {
+  font-size: 16px;
 }
 
 .primaryBtn {
@@ -88,9 +94,15 @@ body {
   font-size: 18px;
   color: #fff;
 }
-#topbar a:hover{text-decoration:none;	}
-#topbar .border-left{    border-left: 1px solid #474c8a!important;}
-#topbar .follower{padding:2px 0 0 2px;}
+#topbar a:hover {
+  text-decoration: none;
+}
+#topbar .border-left {
+  border-left: 1px solid #474c8a !important;
+}
+#topbar .follower {
+  padding: 2px 0 0 2px;
+}
 /* topbar section end */
 /* header section start*/
 #contactUs {
@@ -100,14 +112,31 @@ body {
   font-size: 16px;
   color: #3f3d56;
 }
-.navbar-light .navbar-nav .nav-link:hover{color:#0062cc}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0062cc;
+}
 
 .nav-item {
   margin-right: 2em;
 }
-.signup-news{text-decoration:underline; color:#2ab1fd}
-.featured-area h1{font-size:2rem;}
-.custom-radio{width:20px; height:20px; float:left;}
+.signup-news {
+  text-decoration: underline;
+  color: #2ab1fd;
+}
+.featured-area h1 {
+  font-size: 2rem;
+}
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+a.navbar-brand img {
+  width: 129px !important;
+}
+.navbar {
+  padding-left: 0px !important;
+}
 /* responsive */
 @media only screen and (max-width: 1373px) {
   .nav-item {
@@ -115,12 +144,12 @@ body {
   }
 }
 @media only screen and (max-width: 475px) {
-  a.navbar-brand {
+  /* a.navbar-brand {
     width: 50%;
   }
   a.navbar-brand img {
     width: 100%;
-  }
+  } */
 }
 /* header section end */
 
@@ -128,6 +157,9 @@ body {
 .slide-main-area {
   height: 850px;
   width: 100%;
+}
+.badge {
+  font-size: 100% !important;
 }
 .badge-secondary {
   background-color: #ef779d;
@@ -147,27 +179,31 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
   left: -2.5px;
 }
 .slideSellTitle {
-  width: 90%;
+  width: 98%;
   display: flex;
   margin-left: auto;
   margin-right: 3em;
 }
+.swiper-heading {
+  position: relative;
+}
+
 .swiper_outer {
   /* background-color: #1871b5; */
   position: relative;
-  width: 90%;
+  width: 98%;
   height: 743px;
-  margin-right: 3em;
+  margin-right: 2em;
   margin-left: auto;
   border-radius: 10px;
 }
-.swiper_outer h1 {
+.swiper-heading h1 {
   position: absolute;
-  left: -1.1em;
+  left: -0.85em;
   text-align: initial;
-  font-size: 54px;
+  font-size: 78px;
   text-indent: 11px;
-  top: 9em;
+  top: 6.5em;
   width: 12em;
   z-index: 222;
   background-color: transparent;
@@ -219,9 +255,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
 .swiper-button-prev:after {
   display: none;
 }
-.swiper-button-prev.text-para {
+/* .swiper-button-prev.text-para {
   margin-left: 9em;
-}
+} */
 /* responsive slider */
 @media only screen and (max-width: 475px) {
   .swiper-button-prev,
@@ -232,14 +268,33 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
     margin-bottom: 5em;
     font-size: 22px;
   }
+
   .swiper-button-prev.text-para {
     margin-left: 1em !important;
   }
 }
 @media only screen and (max-width: 562px) {
-  .swiper_outer h1 {
+  .swiper_heading h1 {
     font-size: 30px !important;
     margin-top: 10em !important;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  .swiper-heading h1 {
+    position: absolute;
+    left: 0.3em !important;
+    text-align: initial;
+    font-size: 78px;
+    text-indent: 11px;
+    top: 6.5em;
+    width: 12em;
+    z-index: 222;
+    background-color: transparent;
+    font-family: "Playfair Display", serif;
+  }
+
+  .swiper-heading .text-dark {
+    color: #fff !important;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -249,7 +304,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
   .swiper-button-prev.text-para {
     margin-left: 3em;
   }
-  .swiper_outer .text-dark {
+  .slideSellTitle {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: 5em;
+  }
+  .swiper-heading .text-dark {
     color: #fff !important;
   }
   .slide-img img {
@@ -257,12 +318,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
     width: 50%;
     margin-left: 0px;
   }
-  .swiper_outer h1 {
+  .swiper-heading h1 {
     left: 0em;
     font-size: 50px;
     width: 100%;
     right: 0em;
     padding: 1em;
+    top: 10em;
   }
   .slide-img1 {
     position: relative;
@@ -607,9 +669,9 @@ q::before {
 .card-body h2 {
   color: #1871b5;
 }
-
+.card-body h3{font-size:22px;margin:15px 0;}
 .card-body span {
-  font-size: 24px;
+  font-size: 16px;
   display: block;
   padding-bottom: 1.5em;
 }
@@ -654,15 +716,27 @@ q::before {
 .imglist ul li {
   /* width: 150px; */
   height: 50px;
-  padding: 1em;
+  padding: 1px;
 }
-.imglist ul li img {
+/*.imglist ul li img {
   width: 100%;
   height: 100%;
   object-fit: fill;
   object-position: center;
   filter: contrast(0);
   opacity: 0.3;
+}*/
+
+.imglist ul li  svg {
+    opacity: 0.5;
+}
+.imglist ul li img {
+  width: 100%;
+  /*height: 100%;
+  object-fit: fill;
+  object-position: center;
+  filter: contrast(0);*/
+  opacity: 0.7;
 }
 /* images list section end */
 /* feature section start */
@@ -670,7 +744,7 @@ q::before {
   font-family: "Playfair Display", serif;
 }
 .featureInner {
-  max-width: 350px;
+  max-width: 500px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -767,8 +841,8 @@ q::before {
   width: 100%;
 }
 .card-inner p {
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 16px;
+  line-height: 30px;
   padding-left: 1em;
   overflow: hidden;
 }
@@ -855,3 +929,12 @@ footer {
   font-size: 14px;
 }
 /* footer end */
+
+.sky-clr{overflow:hidden;}
+/*custom media queries*/
+@media  only screen and (max-width: 1366px){
+	.navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+}
